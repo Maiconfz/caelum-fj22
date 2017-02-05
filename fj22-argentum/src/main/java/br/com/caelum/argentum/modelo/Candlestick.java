@@ -75,12 +75,24 @@ public final class Candlestick {
 	public Calendar getData() {
 		return data;
 	}
-	
-	public boolean isAlta(){
+
+	public boolean isAlta() {
 		return this.abertura < this.fechamento;
 	}
-	
-	public boolean isBaixa(){
+
+	public boolean isBaixa() {
 		return this.fechamento > this.abertura;
 	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Candlestick [abertura=" + abertura + ", fechamento=" + fechamento + ", minimo=" + minimo + ", maximo="
+				+ maximo + ", volume=" + volume + ", data=" + data + "]";
+	}
+
 }
