@@ -94,5 +94,4 @@ public final class Candlestick {
 		return "Candlestick [abertura=" + abertura + ", fechamento=" + fechamento + ", minimo=" + minimo + ", maximo="
 				+ maximo + ", volume=" + volume + ", data=" + data + "]";
 	}
-
 }
