@@ -32,7 +32,7 @@ public class CandleBuilder {
 		return this;
 	}
 
-	public CandleBuilder comMaxmo(double maximo) {
+	public CandleBuilder comMaximo(double maximo) {
 		this.maximo = maximo;
 		return this;
 	}
