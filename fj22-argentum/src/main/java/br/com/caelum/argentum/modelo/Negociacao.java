@@ -20,6 +20,11 @@ public final class Negociacao {
 	 * @param data
 	 */
 	public Negociacao(double preco, int quantidade, Calendar data) {
+		
+		if(data == null) {
+			throw new IllegalArgumentException("Data não pode ser nula");
+		}
+		
 		this.preco = preco;
 		this.quantidade = quantidade;
 		this.data = data;
@@ -43,7 +48,7 @@ public final class Negociacao {
 	 * @return the data
 	 */
 	public Calendar getData() {
-		return data;
+		return (Calendar) data.clone();
 	}
 
 	/**
