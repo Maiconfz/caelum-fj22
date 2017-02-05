@@ -15,7 +15,7 @@ import br.com.caelum.argentum.modelo.Negociacao;
  * @author maiconfz
  *
  */
-public class TesteCandlestickFactory {
+public class TestaCandlestickFactory {
 
 	/**
 	 * @param args
